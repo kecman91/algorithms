@@ -13,7 +13,7 @@ stack.Push(1);
 stack.Push(0);
 stack.Push(15);
 
-SortingStacks.StackSort<int>.SortStack(stack);
+SortingStacks.StackSortImproved<int>.SortStack(stack);
 
 while (stack.Count > 0)
 {
