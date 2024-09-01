@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PartitionLinkedList", "Part
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingStacks", "SortingStacks\SortingStacks.csproj", "{9A072C4D-7759-4DC5-8E38-491A3C099E30}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimalShelter", "AnimalShelter\AnimalShelter.csproj", "{7F71805E-4945-42E6-B8E7-443E69E34FAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{9A072C4D-7759-4DC5-8E38-491A3C099E30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A072C4D-7759-4DC5-8E38-491A3C099E30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A072C4D-7759-4DC5-8E38-491A3C099E30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F71805E-4945-42E6-B8E7-443E69E34FAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F71805E-4945-42E6-B8E7-443E69E34FAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F71805E-4945-42E6-B8E7-443E69E34FAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F71805E-4945-42E6-B8E7-443E69E34FAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
