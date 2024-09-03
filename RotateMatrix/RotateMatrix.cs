@@ -4,18 +4,17 @@ public static class RotateMatrix
 {
     public static void Rotate90(int[,] m)
     {
-        var n = m.GetLength(0)-1;
+        var n = m.GetLength(0);
 
-        for (var layer = 0; layer <= n/2; layer++)
+        for (var i = 0; i < n/2; i++)
         {
-            for (var i = layer; i <= n-layer; i++)
+            for (var j = i; j < n-i-1; j++)
             {
-                int offset = i - layer;
-                var top = m[layer, i];
-                m[layer, i] = m[n-layer-offset, layer];
-                m[n-layer-offset, layer] = m[n-layer, n-layer-offset];
-                m[n-layer, n-layer-offset] = m[i,n-layer];
-                m[i,n-layer] = top;
+                var top = m[i, j];
+                m[i, j] = m[j, n-i-1];
+                m[j, n-i-1] = m[n-i-1, n-j-1];
+                m[n-i-1, n-j-1] = m[n-j-1,i];
+                m[n-j-1,i] = top;
             }
         }
     }
