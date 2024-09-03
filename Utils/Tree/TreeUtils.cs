@@ -3,9 +3,9 @@ using Domain.Models.Graphs;
 
 namespace Utils.Tree;
 
-public static class TreeUtils<T>
+public static class TreeUtils
 {
-    public static void PrintTree(BinaryTreeNode<T>? tree)
+    public static void PrintTree<T>(BinaryTreeNode<T>? tree)
     {
         static void Print(BinaryTreeNode<T>? tree, int level)
         {
@@ -24,7 +24,7 @@ public static class TreeUtils<T>
         Print(tree, 0);
     }
 
-    public static BinaryTreeNode<T>? CreateMinimalBinarySearchTree(T[] array)
+    public static BinaryTreeNode<T>? CreateMinimalBinarySearchTree<T>(T[] array)
     {
         static BinaryTreeNode<T>? CreateMinimalBinarySearchTree(T[] array, int start, int end)
         {
@@ -46,7 +46,7 @@ public static class TreeUtils<T>
         return CreateMinimalBinarySearchTree(array, 0, array.Length - 1);
     }
 
-    public static bool CheckBalanced(BinaryTreeNode<T>? tree)
+    public static bool CheckBalanced<T>(BinaryTreeNode<T>? tree)
     {
         static (bool, int) CheckBalanced(BinaryTreeNode<T>? tree, int depth)
         {
@@ -73,5 +73,31 @@ public static class TreeUtils<T>
 
         var (isBalanced, _) = CheckBalanced(tree, 0);
         return isBalanced;
+    }
+
+    public static bool ValidateBinarySearchTree<T>(BinaryTreeNode<T>? tree) where T : IComparable<T>
+    {
+
+        static bool ValidateBinarySearchTree(BinaryTreeNode<T>? tree, T? min, T? max)
+        {
+            if (tree == null)
+            {
+                return true;
+            }
+
+            if ((min != null) && tree.Data.CompareTo(min) < 0 || (max != null) && tree.Data.CompareTo(max) > 0)
+            {
+                return false;
+            }
+
+            if (!ValidateBinarySearchTree(tree.Children[0], min, tree.Data) || !ValidateBinarySearchTree(tree.Children[1], tree.Data, max))
+            {
+                return false;
+            }
+
+            return true;
+        }
+        
+        return ValidateBinarySearchTree(tree, default, default);
     }
 }

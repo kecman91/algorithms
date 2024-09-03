@@ -7,6 +7,7 @@ Console.WriteLine("Hello, World!");
 var array = new int[]{-3,-2,0,1,4,6,7,7,8,12,24,25,26,27,28,30,55,56};
 
 var tree = MinimalTreeFactory<int>.CreateMinimalBinarySearchTree(array);
-Console.WriteLine("Is tree balanced: " + TreeUtils<int>.CheckBalanced(tree));
+// Console.WriteLine("Is tree balanced: " + TreeUtils.CheckBalanced(tree));
+Console.WriteLine("Is tree a binary search tree: " + TreeUtils.ValidateBinarySearchTree(tree));
 
-TreeUtils<int>.PrintTree(tree);
+TreeUtils.PrintTree(tree);
