@@ -29,6 +29,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utils", "Utils\Utils.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZeroMatrix", "ZeroMatrix\ZeroMatrix.csproj", "{D4EBDF01-8142-4DD1-B0CF-DF48AF17B050}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicProgramming", "DynamicProgramming\DynamicProgramming.csproj", "{BEE694C1-D79C-40E5-85DE-CCA7E3512F7D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{D4EBDF01-8142-4DD1-B0CF-DF48AF17B050}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4EBDF01-8142-4DD1-B0CF-DF48AF17B050}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4EBDF01-8142-4DD1-B0CF-DF48AF17B050}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEE694C1-D79C-40E5-85DE-CCA7E3512F7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEE694C1-D79C-40E5-85DE-CCA7E3512F7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEE694C1-D79C-40E5-85DE-CCA7E3512F7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEE694C1-D79C-40E5-85DE-CCA7E3512F7D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
