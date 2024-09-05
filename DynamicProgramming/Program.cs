@@ -38,11 +38,15 @@ Console.WriteLine(thereIsAWay);
 
 MatrixUtils.Print(result); */
 
-var array = new int[11] {-15, -12, -10, -5, -3, 0, 1, 4, 6, 9, 11};
+/* var array = new int[11] {-15, -12, -10, -5, -3, 0, 1, 4, 6, 9, 11};
 Console.WriteLine("The magic index is: " + MagicIndex.FindMagicIndexBinariSearch(array));
 
 var arrayDupes = new int[11] {-5, -4, -4, 5, 5, 5, 5, 6, 6, 9, 10};
-Console.WriteLine("The magic index is: " + MagicIndex.FindMagicIndexBinariSearch(arrayDupes));
+Console.WriteLine("The magic index is: " + MagicIndex.FindMagicIndexBinariSearch(arrayDupes)); */
+
+var a = 5;
+var b = 7;
+Console.WriteLine($"{a} * {b} = {RecursiveMultiply.MultiplyImproved(a, b)}");
 
 sw.Stop();
 Console.WriteLine(sw.ElapsedMilliseconds);
