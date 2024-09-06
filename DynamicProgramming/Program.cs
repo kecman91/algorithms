@@ -44,9 +44,15 @@ Console.WriteLine("The magic index is: " + MagicIndex.FindMagicIndexBinariSearch
 var arrayDupes = new int[11] {-5, -4, -4, 5, 5, 5, 5, 6, 6, 9, 10};
 Console.WriteLine("The magic index is: " + MagicIndex.FindMagicIndexBinariSearch(arrayDupes)); */
 
-var a = 5;
+/* var a = 5;
 var b = 7;
-Console.WriteLine($"{a} * {b} = {RecursiveMultiply.MultiplyImproved(a, b)}");
+Console.WriteLine($"{a} * {b} = {RecursiveMultiply.MultiplyImproved(a, b)}"); */
+
+var permutations = PermutationsWithoutDups.FindPermutations("abc");
+foreach (var str in permutations)
+{
+    Console.WriteLine(str);
+}
 
 sw.Stop();
 Console.WriteLine(sw.ElapsedMilliseconds);
