@@ -35,7 +35,7 @@ public class NQueenTraditional
                 {
                     sb.Append(_matrix[i,j] + ",");
                 }
-                sb.Append("\n");
+                sb.Append('\n');
             }
             _solutions.Add(sb.ToString());
             return;

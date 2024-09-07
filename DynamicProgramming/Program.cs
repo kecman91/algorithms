@@ -48,11 +48,13 @@ Console.WriteLine("The magic index is: " + MagicIndex.FindMagicIndexBinariSearch
 var b = 7;
 Console.WriteLine($"{a} * {b} = {RecursiveMultiply.MultiplyImproved(a, b)}"); */
 
-var permutations = PermutationsWithoutDups.FindPermutations("abc");
+/* var permutations = PermutationsWithoutDups.FindPermutations("abc");
 foreach (var str in permutations)
 {
     Console.WriteLine(str);
-}
+} */
+
+Console.WriteLine(Coins.Change(6, [25, 10, 5, 1]));
 
 sw.Stop();
 Console.WriteLine(sw.ElapsedMilliseconds);
