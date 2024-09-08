@@ -33,6 +33,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utils", "Utils\Utils.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZeroMatrix", "ZeroMatrix\ZeroMatrix.csproj", "{A0030510-F385-4B3B-B4E9-79CC51F33192}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildOrder", "BuildOrder\BuildOrder.csproj", "{54E5305B-5F8C-42D6-B34E-C65EFB99CFAF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{A0030510-F385-4B3B-B4E9-79CC51F33192}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0030510-F385-4B3B-B4E9-79CC51F33192}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0030510-F385-4B3B-B4E9-79CC51F33192}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54E5305B-5F8C-42D6-B34E-C65EFB99CFAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54E5305B-5F8C-42D6-B34E-C65EFB99CFAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54E5305B-5F8C-42D6-B34E-C65EFB99CFAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54E5305B-5F8C-42D6-B34E-C65EFB99CFAF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

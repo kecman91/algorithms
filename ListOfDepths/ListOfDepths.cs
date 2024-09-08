@@ -36,7 +36,7 @@ public static class ListOfDepths<T>
         return head;
     }
 
-    private static int CountDepth(BinaryTreeNode<T> root)
+    public static int CountDepth(BinaryTreeNode<T> root)
     {
         static int CountDepth(BinaryTreeNode<T>? tree, int depth)
         {
